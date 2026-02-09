@@ -1,0 +1,88 @@
+.ppdb {
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.ppdb-container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.ppdb-container h1 {
+  text-align: center;
+  color: #0b5ed7;
+  margin-bottom: 10px;
+}
+
+.ppdb-desc {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #475569;
+}
+
+.ppdb-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.ppdb-btn {
+  grid-column: span 2;
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ppdb-btn:hover {
+  background: #084298;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .ppdb-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full,
+  .ppdb-btn {
+    grid-column: span 1;
+  }
+}
